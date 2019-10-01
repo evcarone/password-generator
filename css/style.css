@@ -1,0 +1,54 @@
+.body {
+    background-image: url(brushed/brushed.png);
+}
+ .flex-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: top;
+ }
+.footer {
+    padding: 15px;
+    margin-top: 5%;
+    display: flex;
+    color: white;
+    background: dimgray;
+    justify-content: center;
+    align-content: center;
+}
+.contentbox {
+    background-color: white;
+    color: gray;
+}
+h1 {
+    color: black;
+}
+p {
+    font-size: 14px;
+    line-height: 1.2em;
+}
+.a {
+    color: grey;
+}
+.name {
+    padding: 5px;
+    display:flex;
+    color: white;
+    background-color: lightseagreen;
+    width: auto;
+    font-size: 24pt;
+    margin-left: 20px;
+}
+.container {
+    background-color: lightgray;
+    border: 5px;
+    border-color: black;
+}
+input:invalid {
+    border: 2px dashed red;
+  }
+  
+  input:valid {
+    border: 2px solid black;
+  }

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Password Generator</title>
+</head>
+
+<body>
+  <!-- user lands on the page & selects Genearate Password -->
+  <!-- user is prompted to
+        1) enter a password length 8-128 
+        2) selects at least one character type 
+            a) special characters
+            b) numeric
+            c) upper 
+            d) lower -->
+  <!-- application generates the password & displays the answer -->
+  <!-- user copies from the clipboard -->
+  <header>
+    <h1>Password Generator</h1>
+  </header>
+  <!-- setups of the bootstrap grid container -->
+  <div class="container">
+    <!-- row #1 for the header / title -->
+    <div class="row">
+      <div class="col-md-6">
+        <header>
+          <h1>Generate a Password</h1>
+        </header>
+      </div>
+    </div>
+    <form>
+      <!-- row #2 for collecting password length -->
+      <div class="form-group row">
+        <div class="col-md-4 form-control-lg">
+          Your password
+        </div>
+        <div class="col-md-8">
+          <div class="form-check-input form-control-lg">
+            <input readonly type="text" name="password" id="password">
+          </div>
+        </div>
+      </div>
+      <!-- row #3 for collecting password length -->
+      <div class="form-group row">
+        <div class="col-md-4 form-control-lg">
+          Password length
+        </div>
+        <div class="col-md-8">
+          <div class="form-check-input form-control-lg">
+            <input type="number" name="passwordLength" id="passwordLength" min="8" max="128" value="8" required>
+          </div>
+        </div>
+      </div>
+      <!-- row #4 for checkboxesto select different character options for password -->
+      <div class="form-group row">
+        <div class="col-md-4 form-control-lg">
+          Character Types
+        </div>
+        <div class="col-md-8">
+          <div class="form-check form-control-lg">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              Numeric
+            </label>
+          </div>
+          <div class="form-check form-control-lg">
+            <input class="form-check-input" type="checkbox" id="gridCheck2">
+            <label class="form-check-label" for="gridCheck2">
+              Upper Case
+            </label>
+          </div>
+          <div class="form-check form-control-lg">
+            <input class="form-check-input" type="checkbox" id="gridCheck3">
+            <label class="form-check-label" for="gridCheck3">
+              Lower Case
+            </label>
+          </div>
+          <div class="form-check form-control-lg">
+            <input class="form-check-input" type="checkbox" id="gridCheck4">
+            <label class="form-check-label" for="gridCheck4">
+              Special Characters
+            </label>
+          </div>
+        </div>
+      </div>
+      <!-- row #5 for generate password and copy password buttons -->
+      <div class="form-group row">
+        <div class="col-md-4 form-control-lg">
+          <button type="submit" class="btn btn-primary" id="generate">Generate</button>
+        </div>
+        <div class="col-md-4 form-control-lg">
+          <button type="submit" class="btn btn-primary" id="copy">Copy</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+  
+
+  <script>
+    var getLength = prompt("Select Length of 8-10: ");
+    var getCharType = prompt("What character type? (choose one)");
+
+    console.log(getLength);
+    console.log(getCharType);
+
+  </script>
+
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

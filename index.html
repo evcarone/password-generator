@@ -42,12 +42,12 @@
         </div>
         <div class="col-md-8">
           <div class="form-check-input form-control-lg">
-            <input readonly type="text" name="password" id="password">
+            <input type="text" name="password" id="password">
           </div>
         </div>
       </div>
       <!-- row #3 for collecting password length -->
-      <div class="form-group row">
+      <!-- <div class="form-group row">
         <div class="col-md-4 form-control-lg">
           Password length
         </div>
@@ -56,8 +56,8 @@
             <input type="number" name="passwordLength" id="passwordLength" min="8" max="128" value="8" required>
           </div>
         </div>
-      </div>
-      <!-- row #4 for checkboxesto select different character options for password -->
+      </div> -->
+      <!-- row #4 for checkboxesto select different character options for password
       <div class="form-group row">
         <div class="col-md-4 form-control-lg">
           Character Types
@@ -88,7 +88,7 @@
             </label>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- row #5 for generate password and copy password buttons -->
       <div class="form-group row">
         <div class="col-md-4 form-control-lg">
@@ -101,21 +101,8 @@
     </form>
   </div>
 
-
-  
-
-  <script>
-    var getLength = prompt("Select Length of 8-10: ");
-    var getCharType = prompt("What character type? (choose one)");
-
-    console.log(getLength);
-    console.log(getCharType);
-
-  </script>
-
-
-
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./script.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

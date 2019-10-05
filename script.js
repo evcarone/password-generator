@@ -1,8 +1,8 @@
 var getLength = prompt("Select Length of 8-128 characters: ");
-var isCharTypeNum = confirm("Include numbers)? ");
-var isCharTypeUpper = confirm("Include upper case? ");
-var isCharTypeLower = confirm("Include lower case? ");
-var isCharTypeSpecial = confirm("Include special characters? ");
+var isCharTypeNum = confirm("Include Numbers? ");
+var isCharTypeUpper = confirm("Include Upper Case? ");
+var isCharTypeLower = confirm("Include Lower Case? ");
+var isCharTypeSpecial = confirm("Include Special Characters? ");
 var password = [];
 var writePasswordEl = document.querySelector("#password");
 

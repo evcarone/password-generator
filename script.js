@@ -13,22 +13,31 @@ const typeSpecialCharacters = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')',
 
 //dynamically set the choices array based on user input for different character types
 
+
 var choicesArray = [];
 if (isCharTypeUpper)
-    choicesArray += typeUpperCaseLetters;
+    choicesArray = choicesArray.concat(typeUpperCaseLetters);
 if (isCharTypeLower)
-    choicesArray += typeLowerCaseLetters;
+    choicesArray = choicesArray.concat(typeUpperCaseLetters);
 if (isCharTypeNum)
-    choicesArray += typeNumbers;
+    choicesArray = choicesArray.concat(typeNumbers);
 if (isCharTypeSpecial)
-    choicesArray += typeSpecialCharacters;
+    choicesArray = choicesArray.concat(typeSpecialCharacters);
 
-if (choicesArray.length < typeNumbers.length) {
-    alert("You must choose at least 1 character type.");
-    
-} else {
-    for (let i = 0; i < getLength; i++)
-    newPassword += choicesArray[(Math.floor(Math.random() * (choicesArray.length - 1)))];
-    var convertPasswordToString = (JSON.stringify(newPassword));
-    displayPasswordEl.textContent = convertPasswordToString;
-};
+//function to generate the new passowrd based on dynamically constructing an array
+function generateNewPassword() {
+    console.log("inside the function ")  
+    if (choicesArray.length < typeNumbers.length) {
+        alert("You must choose at least 1 character type.") 
+        console.log("inside function and if statement")
+    } else {
+        console.log("get length value : " + getLength);
+        for (i=0; i < getLength; i++) {
+        console.log("math random value : " + Math.floor(Math.random() * 10));
+        newPassword += choicesArray[Math.floor(Math.random() * 10)];
+        console.log("log array value for new passowrd : " + newPassword[i])
+        }
+        displayPasswordEl.textContent = newPassword;
+    };
+} 
+generateNewPassword();

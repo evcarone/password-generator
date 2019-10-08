@@ -25,17 +25,17 @@ if (isCharTypeSpecial)
     choicesArray = choicesArray.concat(typeSpecialCharacters);
 
 //function to generate the new passowrd based on dynamically constructing an array
+//need to add logic for better user experience on error for length or type choices
 function generateNewPassword() {
     console.log("inside the function ")  
-    if (choicesArray.length < typeNumbers.length) {
-        alert("You must choose at least 1 character type.") 
-        console.log("inside function and if statement")
+    if (choicesArray.length < typeNumbers.length || getLength < 8) {
+        alert("You did not meet the minimum standard ") 
     } else {
         console.log("get length value : " + getLength);
         for (i=0; i < getLength; i++) {
-        console.log("math random value : " + Math.floor(Math.random() * 10));
-        newPassword += choicesArray[Math.floor(Math.random() * 10)];
-        console.log("log array value for new passowrd : " + newPassword[i])
+        console.log("math random new value : " + Math.floor(Math.random() * (choicesArray.length-1)));
+        newPassword += choicesArray[Math.floor(Math.random() * (choicesArray.length-1))];
+        console.log("log array value for new password : " + newPassword[i])
         }
         displayPasswordEl.textContent = newPassword;
     };

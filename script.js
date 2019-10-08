@@ -4,7 +4,8 @@ var isCharTypeUpper = "false";
 var isCharTypeLower = "false";
 var isCharTypeSpecial = "false";
 var newPassword = [];
-var generatePasswordBtnEl = document.querySelector("#generatePassword")
+var generatePasswordBtnEl = document.querySelector("#generatePassword");
+var copyPasswordToClipboardEl = document.querySelector("#copyPassword");
 var displayPasswordEl = document.querySelector("#displayPassword");
 
 const typeLowerCaseLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
@@ -56,3 +57,8 @@ function generateNewPassword() {
         displayPasswordEl.textContent = newPassword;
     };
 } 
+
+//copy to clipboard
+function copyPasswordToClipboard() {
+    
+};

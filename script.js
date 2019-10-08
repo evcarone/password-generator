@@ -59,6 +59,6 @@ function generateNewPassword() {
 } 
 
 //copy to clipboard
-function copyPasswordToClipboard() {
-    
-};
+copyPasswordToClipboardEl.addEventListener("click", function() {
+    alert("copy and paste not working yet");
+});

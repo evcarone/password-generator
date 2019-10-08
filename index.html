@@ -10,43 +10,34 @@
   <title>Password Generator</title>
 </head>
 
-<body>
-  <header>
-    <h1>Password Generator</h1>
-  </header>
-  <!-- setups of the bootstrap grid container -->
+<body class="body">
+  <h1 class="h1">Password Generator</h1>
   <div class="container">
-    <!-- row #1 for the header / title -->
-    <div class="row">
-      <div class="col-md-6">
-        <header>
-          <h1>Generate a Password</h1>
-        </header>
-      </div>
-    </div>
-    <form>
-      <!-- row #2 for collecting password length -->
-      <div class="form-group row">
-        <div class="col-md-4 form-control-lg">
-          Your password
-        </div>
-        <div class="col-md-8">
-          <div class="form-check-input form-control-lg">
-            <input type="text" name="password" id="password">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3 class="text-center">Generate a Password</h3>
+          <hr/>
+          <div class="row">
+            <div class="col-10 col-sm-8 mx-auto w-50 p-3 text-gray text-center border" id="displayPassword">
+                your secure password
+            </div>
           </div>
         </div>
       </div>
-      
-      <div class="form-group row">
-        <div class="col-md-4 form-control-lg">
-          <button type="submit" class="btn btn-primary" id="generate">Generate</button>
+      <div class="row">
+          <div class="col-sm-12">
+            <hr/>
+            <div class="row">
+              <div class="col-8 col-sm-6">
+                <button type="submit" class="btn btn-danger btn-lg rounded" id="generatePassword">Generate</button>
+              </div>
+              <div class="col-8 col-sm-6">
+                  <button type="submit" class="btn btn-secondary disabled btn-lg rounded" id="copyPassword">Copy</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4 form-control-lg">
-          <button type="submit" class="btn btn-primary" id="copy">Copy</button>
-        </div>
-      </div>
-    </form>
-  </div>
+    </div>    
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="./script.js"></script>

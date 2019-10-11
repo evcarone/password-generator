@@ -1,11 +1,16 @@
 # password-generator
-generates a secure password
+generates a password based on user input criteria
+
+**known bugs:
+
+* password display field doesn't clear when a password is regenerated. password generates correctly but is concatenated in the display
+* copy / paste passowrd doensn't work. user is alerted that this function is broken.
 
 
 
 
 
-
+REQUIREMENTS
 ---------HOMEWORK INSTRUCTIONS-------------------
 # Unit 03 JavaScript Homework: Password Generator
 
@@ -38,8 +43,6 @@ Your application should have a clean and polished user interface and be responsi
 Your application should be deployed to GitHub Pages.
 
 Your application's GitHub repository should contain a README.md file explaining the purpose and functionality of the application. The README.md file should include a screenshot of the completed application as well as a link to the deployed GitHub Pages URL.
-
-![password generator demo](./Assets/03-JavaScript-homework-demo.png)
 
 ## User Story
 

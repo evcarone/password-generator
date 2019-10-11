@@ -56,6 +56,7 @@ function generateNewPassword() {
         }
         displayPasswordEl.textContent = newPassword;
     };
+    newPassword = [];
 } 
 
 //copy to clipboard
